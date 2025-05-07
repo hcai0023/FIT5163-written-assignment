@@ -1,13 +1,7 @@
-# Simplified OPAQUE Protocol with Explicit Diffie-Hellman Integration
-# NOTE: Educational implementation using your original DiffieHellman class
-
-import os
 import base64
-from Crypto.Hash import SHA256
-from Crypto.PublicKey import RSA
-from Crypto.Random import get_random_bytes
 from Crypto.Cipher import AES
-from Crypto.Protocol.KDF import HKDF
+from Crypto.Hash import SHA256
+from Crypto.Random import get_random_bytes
 from Crypto.Util.number import getPrime
 
 
