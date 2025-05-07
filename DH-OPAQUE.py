@@ -255,10 +255,6 @@ class OPAQUE_GUI:
         self.opaque_output.pack(fill=tk.BOTH, expand=True, pady=10)
         self.opaque_output.config(state='disabled')
 
-        # 错误登录演示
-        # error_login_frame = ttk.LabelFrame(self.opaque_frame, text="错误登录演示")
-        # error_login_frame.pack(fill=tk.X, pady=10)
-
         # 添加演示两个用户通过不安全通道建立共享密钥的功能
         secure_key_frame = ttk.LabelFrame(self.opaque_frame, text="安全通道共享密钥演示")
         secure_key_frame.pack(fill=tk.X, pady=10)
