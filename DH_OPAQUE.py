@@ -1,7 +1,5 @@
 from Crypto.Random import random
-from Crypto.Hash import SHA256
-from Crypto.PublicKey import RSA
-from Crypto.Signature import pkcs1_15
+
 
 class DiffieHellman:
     def __init__(self, p, g):
@@ -29,17 +27,13 @@ class DiffieHellman:
         except (ValueError, TypeError):
             return False
 
-# Simplified OPAQUE Protocol Demonstration
-# NOTE: This is a simplified educational implementation.
-
-import os
 import base64
 from Crypto.Hash import SHA256
 from Crypto.PublicKey import RSA
 from Crypto.Signature import pkcs1_15
 from Crypto.Random import get_random_bytes
 from Crypto.Cipher import AES
-from Crypto.Protocol.KDF import HKDF
+
 
 # --- Utility functions ---
 
