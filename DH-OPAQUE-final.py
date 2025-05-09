@@ -34,9 +34,6 @@ class DiffieHellman:
         except (ValueError, TypeError):
             return False
 
-# Simplified OPAQUE Protocol Demonstration
-# --- Utility functions ---
-
 def hash_bytes(data):
     return SHA256.new(data).digest()
 
