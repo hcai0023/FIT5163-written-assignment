@@ -34,6 +34,8 @@ class DiffieHellman:
         except (ValueError, TypeError):
             return False
 
+
+
 def hash_bytes(data):
     return SHA256.new(data).digest()
 
@@ -60,6 +62,8 @@ def blind(password, server_pub_key):
     pw_hash = int.from_bytes(hash_bytes(password.encode()), 'big')
     blinded = (pow(r, server_pub_key.e, server_pub_key.n) * pw_hash) % server_pub_key.n
     return blinded, r
+
+
 
 def unblind(signed_blinded, r, pub_key):
     r_inv = pow(r, -1, pub_key.n)
